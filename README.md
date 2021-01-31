@@ -24,4 +24,4 @@
   pre-commit install
   ```
 
-  設定の内容は、`.pre-commit-config.yaml`に記述されている。
+  チェックの内容は、`.pre-commit-config.yaml`に記述されている。
