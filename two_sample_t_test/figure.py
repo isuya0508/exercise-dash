@@ -13,7 +13,7 @@ def draw_swarm_plot(data_a: List[float], data_b: List[float]) -> go.Figure:
 
     Returns
     -------
-    go.Figure
+    plotly.graph_objects.Figure
     """
 
     fig = go.Figure()
@@ -43,7 +43,7 @@ def swarm_plot_box(data: List[float], name: str) -> go.Box:
 
     Returns
     -------
-    go.Box
+    plotly.graph_objects.Box
     """
 
     # 箱ひげ図を消すために、fillcolor、line、pointsposの引数を追加する
