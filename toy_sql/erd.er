@@ -1,0 +1,29 @@
+[country]
+*name {label:"STRING"}
+landmass_id {label:"INTEGER"}
+zone_id {label:"INTEGER"}
+area {label:"INTEGER"}
+population {label:"INTEGER"}
+language_id {label:"INTEGER"}
+religion_id {label:"INTEGER"}
+
+[landmass]
+*id {label:"INTEGER"}
+name {label:"STRING"}
+
+[zone]
+*id {label:"INTEGER"}
+quadrant {label:"STRING"}
+
+[language]
+*id {label:"INTEGER"}
+name {label:"STRING"}
+
+[religion]
+*id {label:"INTEGER"}
+name {label:"STRING"}
+
+country +--1 landmass
+country +--1 zone
+country +--1 language
+country +--1 religion
